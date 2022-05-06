@@ -16,11 +16,11 @@
     line-height: 1.19;
     text-decoration: none;
     display: block;
-    margin-right: 93px;   
+    margin-right: 93px;
+}
 
-    &__web {
-        color: $accent-text-color;
-    }
+.logo__web {
+    color: $accent-text-color;
 }
 
 .site-nav {
@@ -29,25 +29,29 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    text-decoration: none;    
+}
+
+.site-nav__item {
+    position: relative;
+
+    &:not(:first-child) {
+        margin-left: 50px;
+    }
+}
+
+.site-nav__link {
+    color: $titile-text-color;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color $transition-duration $overlay-cubic;
     text-decoration: none;
 
-    &__item {
-        position: relative;
-    }
-    
-    &__link {
-        color: $titile-text-color;
-        padding-top: 32px;
-        padding-bottom: 32px;
-        transition: color $transition-duration $overlay-cubic;
-        text-decoration: none;
-    }
-    
-    &__link--current {
+    &--current {
         color: $accent-text-color;
     }
-    
-    &__link--current::after {
+
+    &--current::after {
         display: block;
         position: absolute;
         margin-top: 29px;
@@ -56,10 +60,6 @@
         height: 4px;
         background: $focus-button-bg-color;
         border-radius: 2px;
-    }
-    
-    &__item:not(:first-child) {
-        margin-left: 50px;
     }
 }
 
@@ -73,40 +73,40 @@
     letter-spacing: 0.02em;
     text-decoration: none;
     margin-left: auto;
+}
 
-    &__item:not(:first-child) {
-        margin-left: 30px;
-    }
-    
-    &__link {
-        display: flex;
-        align-items: center;
-        color: $primary-text-color;
-        padding-top: 32px;
-        padding-bottom: 32px;
-        text-decoration: none;
-        transition: color $transition-duration $overlay-cubic;
-    }
-    
-    &__link:hover,
-    &__link:focus {
+.auth-nav__item:not(:first-child) {
+    margin-left: 30px;
+}
+
+.auth-nav__link {
+    display: flex;
+    align-items: center;
+    color: $primary-text-color;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-decoration: none;
+    transition: color $transition-duration $overlay-cubic;
+
+    &:hover,
+    &:focus {
         color: $accent-text-color;
     }
-    
-    &__icon--envelope {
-        width: 16px;
-        height: 12px;
-        margin-right: 10px;
-        fill: currentColor;
-        text-align: center;
-    }
-    
-    &__icon--smartphone {
-        width: 10px;
-        height: 16px;
-        margin-right: 10px;
-        fill: currentColor;
-    }
+}
+
+.auth-nav__icon--envelope {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+    text-align: center;
+}
+
+.auth-nav__icon--smartphone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
 }
 
 .decor:hover,
