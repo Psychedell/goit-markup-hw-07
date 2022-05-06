@@ -1,0 +1,40 @@
+.section-doing {
+    padding-top: 0;
+    padding-bottom: 94px;
+
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 50px;
+        color: $titile-text-color;
+    }
+}
+
+.doing-list {
+    display: flex;
+    justify-content: space-between;
+
+    &__item {
+        position: relative;
+    }
+    
+    &__element {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        width: 370px;
+        height: 70px;
+        background: rgba(47, 48, 58, 0.8);
+    
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.143;
+        color: $white-text-color;
+    }
+}
