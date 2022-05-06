@@ -15,22 +15,23 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body class="body">
+  <body>
+
     <!--Header-->
     <header class="page-header">
       <div class="container container-header">
-        <a href="./index.html" class="logo"><span class="logo-link">Web</span>Studio</a>
+        <a href="./index.html" class="logo"><span class="logo__link">Web</span>Studio</a>
         <nav>
           <ul class="site-nav list">
-            <li class="item">
-              <a href="./index.html" class="site-nav-link decor current">Студия</a>
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__link decor current">Студия</a>
             </li>
-            <li class="item">
-              <a href="./portfolio.html" class="site-nav-link decor">Портфолио</a>
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="site-nav__link decor">Портфолио</a>
             </li>
-            <li class="item"><a href="" class="site-nav-link decor">Контакты</a></li>
+            <li class="site-nav__item"><a href="" class="site-nav__link decor">Контакты</a></li>
           </ul>
         </nav>
         <ul class="auth-nav list">
@@ -54,6 +55,7 @@
       </div>
     </header>
 
+    <!-- Main -->
     <main>
       <!--Hero-->
       <section class="hero">
@@ -67,7 +69,7 @@
 
       </section>
 
-      <!--Плюсы работы-->
+      <!--Pluses of work-->
       <section class="section">
         <div class="container">
           <h2 class="section-title visually-hidden">Плюсы работы</h2>
@@ -133,7 +135,7 @@
         </div>
       </section>
 
-      <!--Чем мы занимаемся-->
+      <!--We doing-->
       <section class="section section-doing">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
@@ -160,7 +162,7 @@
         </div>
       </section>
 
-      <!--Наша команда-->
+      <!--Team-->
       <section class="section team">
         <div class="container container-team-main">
           <h2 class="section-title">Наша команда</h2>
@@ -317,9 +319,8 @@
           </ul>
         </div>
       </section>
-    </main>
 
-    <!-- Постоянные клиенты -->
+      <!-- Regular customers -->
      <section class="section">
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
@@ -481,7 +482,7 @@
               
               <div class="form-group box">
                 <label class="label-policy">
-                  <input class="checkbox" type="checkbox" name="policy">
+                  <input class="checkbox visually-hidden" type="checkbox" name="policy">
                   <span class="checkbox-icon"></span>
                   Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
                 </label>
