@@ -1,28 +1,6 @@
 /* header */
 
 /* hero */
-.hero {
-    text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
-
-    background-image: url(../images/Img-Overlay.png),
-            url(../images/bg-hero.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.hero-title {
-    color: var(--white-text-color);
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    margin-top: 0;
-    margin-bottom: 40px;
-}
 
 /* section */
 .section {
@@ -447,22 +425,6 @@
 /* 00000000000000000000000000000000000000 */
 
 /* buttons */
-.button {
-    color: var(--white-text-color);
-    background-color: var(--focus-button-bg-color);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    cursor: pointer;
-    border-radius: 4px;
-    padding: 10px 32px;
-    margin-left: auto;
-    margin-right: auto;
-    border: transparent;
-    transition: background-color var(--transition-duration) var(--overlay-cubic);
-    }
-
 .button.photo-nav {
     color: var(--titile-text-color);
     background-color: var(--button-bg-color); 
@@ -478,11 +440,6 @@
     transition: color var(--transition-duration) var(--overlay-cubic),
     background-color var(--transition-duration) var(--overlay-cubic),
     box-shadow var(--transition-duration) var(--overlay-cubic);
-}
-
-.button:hover,
-.button:focus {
-    background-color: var(--focus-button-bg-color-order);
 }
 
 .button.photo-nav:hover,
