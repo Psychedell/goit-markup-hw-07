@@ -447,46 +447,46 @@
     <!-- modal -->
     <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-            <button class="close-button" data-modal-close>
-              <svg class="close-button-icon" style="width: 11px; height: 11px">
+            <button class="modal__close-button" data-modal-close>
+              <svg style="width: 11px; height: 11px">
                 <use href="./images/icons.svg#window-close"></use>
               </svg>
             </button>
 
             <form class="form" autocomplete="off">
-              <p class="form-name">Оставьте свои данные, мы вам перезвоним</p>
-              <div class="form-group">
-                <label class="form-label" for="name">Имя</label>
-                <input class="form-input contact-info" type="text" name="user-name" id="name">
-                <svg class="icon">
+              <p class="form__title">Оставьте свои данные, мы вам перезвоним</p>
+              <div class="contact-form">
+                <label class="contact-form__label" for="name">Имя</label>
+                <input class="contact-form__input" type="text" name="user-name" id="name">
+                <svg class="contact-form__icon">
                   <use href="./images/icons.svg#person-black"></use>
                 </svg>
               </div> 
-              <div class="form-group">
-                <label class="form-label" for="tel">Телефон</label>
-                <input class="form-input contact-info" type="tel" name="tel" id="tel">
-                <svg class="icon">
+              <div class="contact-form">
+                <label class="contact-form__label" for="tel">Телефон</label>
+                <input class="contact-form__input" type="tel" name="tel" id="tel">
+                <svg class="contact-form__icon">
                   <use href="./images/icons.svg#phone-black"></use>
                 </svg>
               </div> 
-              <div class="form-group">
-                <label class="form-label" for="email">Почта</label>
-                <input class="form-input contact-info" type="email" name="email" id="email">
-                <svg class="icon">
+              <div class="contact-form">
+                <label class="contact-form__label" for="email">Почта</label>
+                <input class="contact-form__input" type="email" name="email" id="email">
+                <svg class="contact-form__icon">
                   <use href="./images/icons.svg#email-black"></use>
                 </svg>
               </div> 
 
-              <div class="form-group">
-                <label class="form-label" for="comment">Комментарий</label>
-              <textarea class="form-input comment" name="comment" id="comment" rows="5" placeholder="Введите текст"></textarea>
+              <div class="contact-form">
+                <label class="contact-form__label" for="comment">Комментарий</label>
+              <textarea class="contact-form__input contact-form__input--comment" name="comment" id="comment" rows="5" placeholder="Введите текст"></textarea>
               </div>
               
-              <div class="form-group box">
-                <label class="label-policy">
-                  <input class="checkbox visually-hidden" type="checkbox" name="policy">
-                  <span class="checkbox-icon"></span>
-                  Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+              <div class="contact-form-policy">
+                <label class="contact-form-policy__label">
+                  <input class="contact-form-policy__input visually-hidden" type="checkbox" name="policy">
+                  <span class="contact-form-policy__checkbox"></span>
+                  Соглашаюсь с рассылкой и принимаю <a class="contact-form-policy__label--rules" href="">Условия договора</a>
                 </label>
               </div>
             
