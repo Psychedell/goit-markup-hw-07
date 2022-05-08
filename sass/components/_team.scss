@@ -3,13 +3,7 @@
 }
 
 .section-team__title {
-    color: $titile-text-color;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 50px;
+    @extend %title;
 }
 
 .team-list {
@@ -51,8 +45,7 @@
 }
 
 .social-list {
-    display: flex;
-    justify-content: center;
+    @extend %centeredFlex;
 }
 
 .social-list__item {
@@ -65,9 +58,7 @@
 }
 
 .social-list__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %centeredFlex;
     width: 100%;
     height: 100%;
     border-radius: 50%;

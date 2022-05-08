@@ -1,16 +1,9 @@
 .section-portfolio__title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 50px;
-    color: $titile-text-color;
+    @extend %title;
 }
 
 .photo-nav {
-    display: flex;
-    justify-content: center;
+    @extend %centeredFlex;
     padding-bottom: 50px;
 }
 
@@ -19,13 +12,14 @@
 }
 
 .photo-nav__button {
+    @extend %button;
+    display: block;
     color: $titile-text-color;
     background-color: $button-bg-color;
     box-shadow: none;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
-    display: block;
     letter-spacing: 0.03em;
     font-family: inherit;
     cursor: pointer;

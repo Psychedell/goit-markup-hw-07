@@ -4,13 +4,7 @@
 }
 
 .section-doing__title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 50px;
-    color: $titile-text-color;
+    @extend %title;
 }
 
 .doing-list {
@@ -23,9 +17,7 @@
 }
 
 .doing-list__element {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %centeredFlex;
     position: absolute;
     bottom: 0;
     width: 370px;
