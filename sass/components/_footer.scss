@@ -151,6 +151,7 @@
     color: $white-text-color;
     transition: border $transition-duration $overlay-cubic;
     outline: none;
+    cursor: pointer;
 
     &::placeholder {
         font-weight: 400;
